@@ -40,7 +40,7 @@ export const deleteCloudinaryAsset = async (url: string): Promise<void> => {
   try {
     await cloudinary.uploader.destroy(publicId);
   } catch (err) {
-    console.warn('Cloudinary delete failed:', (err as Error).message);
+    console.log('Cloudinary delete failed:', (err as Error).message);
   }
 };
 

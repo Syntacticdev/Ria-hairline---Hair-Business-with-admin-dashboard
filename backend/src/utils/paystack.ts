@@ -1,4 +1,6 @@
-import crypto from 'crypto';
+import dotenv from "dotenv";
+dotenv.config();
+import crypto from "node:crypto"
 import axios from 'axios';
 import { ApiError } from './ApiError';
 
